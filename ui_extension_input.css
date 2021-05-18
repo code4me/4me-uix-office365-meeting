@@ -1,0 +1,99 @@
+#loading_spinner {
+    display: none;
+    width: 16px;
+    height: 16px;
+    margin: 2px 0 0 6px;
+  }
+  #schedule_appointment, #confirm_appointment, #cancel_appointment {
+    display: none;
+    flex-grow: unset;
+  }
+  #buttonHolder {
+    align-items: center;
+  }
+  #meeting-scheduler-wrapper {
+    display: none;
+  }
+  #errorMsgHolder {
+    padding: 0;
+  }
+  #errorMsg {
+    margin: 5px 0;
+    color: darkred;
+  }
+  #EventHtml {
+    overflow-x: clip;
+  }
+  div.meetingTimeSuggestion > input {
+    margin: 6px 10px;
+  }
+  .list-group-item-text {
+    margin: 2px 0px;
+  }
+  
+  .meetingDuration-label {
+    flex-basis: auto;
+    min-width: auto;
+    position: inherit;
+    width: auto;
+    margin-right: 8px;
+  }
+  
+  div.meetingDuration {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    margin-bottom: 5px;
+  }
+  
+  div.meetingDuration > input {
+    margin: 5px;
+  }
+  
+  .meetingTimeSuggestion {
+    background: var(--event-background, #ffffff);
+    border: var(--event-border, solid 2px rgba(0, 0, 0, 0));
+    box-shadow: var(--event-box-shadow, 0px 2px 8px rgba(0, 0, 0, 0.092));
+    margin: var(--event-margin, 0px 10px 14px 10px);
+    padding: var(--event-padding, 0px);
+    display: flex;
+    align-items: center;
+  
+    //background-color: #fff;
+    //border-color: #aaa;
+    //color: #aaa;
+    //padding: 15px;
+    //margin-bottom: 20px;
+    //border: 1px solid;
+    //border-radius: 4px;
+    //box-shadow: 0 0 6px #999;
+  }
+  .joinurl {
+    font-size: 14px;
+    font-family: 'Segoe UI Semibold','Segoe UI','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-decoration: underline;
+    color: #6264a7;
+  }
+  .slotDate {
+    margin-bottom: 4px;
+  }
+  .preferedDate {
+    background-color: #fde5ff;
+    color: #222;
+    padding: 1px 3px;
+    margin: 0 2px;
+    border: 1px solid #f8a6ff;
+    border-radius: 3px;
+    overflow: auto;
+    white-space: pre-wrap;
+  }
+  .preferedTime {
+    background-color: #ebf4ff;
+    color: #222;
+    padding: 1px 3px;
+    margin: 0 2px;
+    border: 1px solid #93bdef;
+    border-radius: 3px;
+    overflow: auto;
+    white-space: pre-wrap;
+  }

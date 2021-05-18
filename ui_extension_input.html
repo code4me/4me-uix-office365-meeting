@@ -1,0 +1,70 @@
+<div class="row horizontal">
+    <label for="modality" title="Modality">Modality</label>
+    <select id="modality" class="required">
+      <option value="presential" selected>Presential</option>
+      <option value="ms_teams">MS Teams</option>
+      <option value="telephonic">Telephonic</option>
+    </select>
+  </div>
+  
+  <div class="row horizontal">
+    <label for="preferred_date" title="Preferred Date">Preferred Date</label>
+    <input id="preferred_date" type="text" autocomplete="off" class="date">
+  </div>
+  
+  <div class="row horizontal">
+    <label for="preferred_timeframe" title="Preferred Timeframe">Preferred Timeframe</label>
+    <select id="preferred_timeframe">
+      <option value="no_preference" selected>No Preference</option>
+      <option value="morning">Morning</option>
+      <option value="afternoon">Afternoon</option>
+    </select>
+  </div>
+  
+  <div class="row horizontal" id="scheduled-meeting-details">
+    <label for="meeting" title="Meeting">Meeting</label>
+    <div id="meeting" class="rich-text"></div>
+  </div>
+  
+  <div class="row horizontal" data-hidden>
+    <label></label>
+    <input type="text" id="meetingId" value="" autocomplete="off" class="hide">
+    <input type="text" id="meetingHtml" value="" autocomplete="off" class="hide">
+    <div id="EventHtml"></div>
+  </div>
+  
+  
+  <div id="meeting-scheduler-wrapper" class="">
+    <div class="row horizontal">
+      <label for="invite_message" title="Invite Message">Invite Message</label>
+      <textarea id="invite_message"></textarea>
+    </div>
+  
+    <div class="row horizontal">
+      <label></label>
+      <div>
+        <div id="meetingDurationHolder" class="meetingDuration">
+          <input type="radio" name="meetingDuration" value="PT30M" checked>
+          <label class="meetingDuration-label">30min</label>
+          <input type="radio" name="meetingDuration" value="PT1H">
+          <label class="meetingDuration-label">1h</label>
+          <input type="radio" name="meetingDuration" value="PT2H">
+          <label class="meetingDuration-label">2h</label>
+        </div>
+        <div id="meetingSlots"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row horizontal" id="errorMsgHolder">
+    <label></label>
+    <div id="errorMsg"></div>
+  </div>
+  <div class="row horizontal" id="buttonHolder">
+    <label></label>
+    <div class="schedule-appointment btn btn_small button" id="schedule_appointment"><span class="btn_label">Suggest an Appointment Timeslot</span></div>
+    <div class="confirm-appointment btn btn_small button" id="confirm_appointment"><span class="btn_label">Send Invitation</span></div>
+    <div class="cancel-appointment btn btn_small button" id="cancel_appointment"><span class="btn_label">Cancel Meeting</span></div>
+    <img alt="" class="loading-spinner" id="loading_spinner" src="https://cdn.4me.qa/assets/spinner_small-8918f2792cfb0eea8fb521cc11811ea819727b37f89271438188cc3faf80c4ce.gif">
+    <br>
+  </div>
+  <!--<pre id="json"></pre>-->
