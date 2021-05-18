@@ -2,6 +2,7 @@
  * -------------------------------------------------------------------------------------------
  * Copyright (c) 4me inc.  All Rights Reserved.  Licensed under the MIT License.
  * See License in the project root for license information.
+ * https://github.com/code4me/4me-uix-office365-meeting/blob/master/LICENSE.txt
  * -------------------------------------------------------------------------------------------
  */
 
