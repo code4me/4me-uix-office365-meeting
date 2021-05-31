@@ -21,11 +21,11 @@
  // Config ------------------------------------------------------------------------
  var useRooms = false;
  var startDate = new Date();
- startDate.setDate(startDate.getDate() + 1); // Tomorrow
+ startDate.setDate(new Date().getDate() + 1); // Tomorrow
  var endDate = new Date();
- endDate.setDate(startDate.getDate() + 10); // One week timeframe
- var startDateISO = startDate.toISOString();
- var endDateISO = endDate.toISOString();
+ endDate.setDate(new Date().getDate() + 11); // One week timeframe
+ var startDateISO = startDate.toISOString().slice(0, -1);
+ var endDateISO = endDate.toISOString().slice(0, -1);
  // -------------------------------------------------------------------------------
  
  
